@@ -10,8 +10,4 @@ class Category extends Model
     protected $guarded = [];
 
 
-    public function books()
-    {
-      return $this->hasManyThrough('App\Book','App\BookCategory','book_id','id','id');
-    }
 }
